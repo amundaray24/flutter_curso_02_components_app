@@ -60,12 +60,12 @@ class _SliderScreenState extends State<SliderScreen> {
             title: const Text('Enable Slider'),
             value: _sliderEnabled, 
             onChanged: (value) {
-              _sliderEnabled = value ?? true;
+              _sliderEnabled = value;
               setState(() {});
             }
           ),
 
-          AboutListTile(),
+          const AboutListTile(),
       
           Expanded(
             child: SingleChildScrollView(
